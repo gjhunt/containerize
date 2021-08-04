@@ -1,6 +1,5 @@
-FROM rocker/r-ver:4.0.3
-WORKDIR /analysis/
-RUN R -e "install.packages('ggplot2')"
-COPY data.csv data.csv
-COPY analysis.R analysis.R
-CMD bash
+FROM jupyter/datascience-notebook
+RUN R -e "install.packages('ggplot2', repos = 'http://cran.us.r-project.org')"
+COPY --chown=1000 data.csv data.csv
+COPY --chown=1000 analysis.ipynb analysis.ipynb
+CMD jupyter lab

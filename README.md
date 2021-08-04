@@ -2,7 +2,7 @@
 
 ## Containerizing reproducible and interactive analyses. 
 
-This is the companion page for our paper **"Containerized Analyses Enable Interactive and Reproducible Code Sharing"** available [here](manuscript.pdf).
+This is the companion page for our paper **"A Review of Containerization for Interactive and Reproducible Analysis"** available [here](manuscript.pdf).
 
 This repository contains **minimum working examples** for containerizing analyses using [Docker](https://www.docker.com/);
 
